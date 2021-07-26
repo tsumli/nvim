@@ -15,20 +15,36 @@ endif
 filetype plugin indent on
 syntax on
 set nocompatible
-set number             
-set autoindent        
+set encoding=utf-8
+set noswapfile
+set nowritebackup
+set nobackup
+
+set number         
 set ruler
+
+set autoindent        
 set tabstop=4        
 set shiftwidth=4    
 set softtabstop=4    
-set showcmd
-set nobackup
 set expandtab      
+
+set showcmd
 set splitright    
-set clipboard=unnamed 
+set clipboard=unnamed
+
 set hls          
-set encoding=utf-8
+nnoremap <F3> :noh<CR>
+
+set backspace=indent,eol,start
+
+" Auto reload when changed by external.
+set autoread
+
+" for searching
 set ignorecase
 set smartcase
-set whichwrap=b,s,<,>,[,] " move cursor from the end of the lines to the next start of the lines
+
+" Allow move between line end and next line head.
+set whichwrap=b,s,<,>,[,]
 
