@@ -65,3 +65,4 @@ repo = 'yuttie/comfortable-motion.vim'
 
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
+
