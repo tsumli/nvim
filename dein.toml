@@ -13,6 +13,8 @@ repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'cohama/lexima.vim'
+on_i = 1
+
 
 [[plugins]]
 repo = 'christoomey/vim-tmux-navigator'

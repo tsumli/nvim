@@ -28,4 +28,7 @@ set splitright
 set clipboard=unnamed 
 set hls          
 set encoding=utf-8
+set ignorecase
+set smartcase
+set whichwrap=b,s,<,>,[,] " move cursor from the end of the lines to the next start of the lines
 
