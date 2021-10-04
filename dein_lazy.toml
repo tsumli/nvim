@@ -8,10 +8,6 @@ repo = 'cespare/vim-toml'
 on_ft = ['toml']
 
 
-[[plugins]]
-repo = 'plasticboy/vim-markdown'
-on_ft = ['markdown']
-
 
 [[plugins]]
 repo = 'elzr/vim-json'
@@ -32,6 +28,25 @@ hook_add = '''
     let g:lsp_signs_warning = {'text': '‼'}    
     let g:lsp_signs_information = {'text': 'i'}    
     let g:lsp_signs_hint = {'text': '?'}    
+    
+    let s:pyls_config = {'pyls': {'plugins': {
+    \   'pycodestyle': {
+    \       'enabled': v:true,
+    \   },
+    \   'pydocstyle': {
+    \       'enabled': v:true,
+    \   },
+    \   'pylint': {
+    \       'enabled': v:true,
+    \   },
+    \   'flake8': {
+    \       'enabled': v:true,
+    \   },
+    \   'jedi_definition': {
+    \     'follow_imports': v:true,
+    \     'follow_builtin_imports': v:true,
+    \   },
+    \ }}}
     
     if (executable('pyls'))    
         augroup LspPython    
